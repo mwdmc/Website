@@ -1,26 +1,13 @@
-# mwd
+# 多元世界官方網站
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
-
-Run development server:
-
-```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
+## 如何使用
 ```
-
-Open http://localhost:3000 with your browser to see the result.
-
-## Learn More
-
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+yarn
+```
+```
+yarn install
+```
+```
+yarn run dev
+```
+這麼簡單，請勿拷貝此區塊的專案，此為 `多元世界團隊` 所屬的官方網站

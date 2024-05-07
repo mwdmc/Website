@@ -36,7 +36,7 @@ export const footer: FooterCategory[] = [
     items: [
       {
         label: "GitHub",
-        href: "https://github.com/MWDMC",
+        href: "https://github.com/mwdmc",
         newWindow: true,
       },
       {
@@ -52,11 +52,10 @@ export const footer: FooterCategory[] = [
       {
         label: "邀請青蛙音樂",
         href: "/invite/frogmusic",
-        newWindow: true,
       },
       {
         label: "服務狀態",
-        href: "https://uptime.frogcord.xyz/",
+        href: "https://status.mwdmc.dev/",
         newWindow: true,
       },
     ],

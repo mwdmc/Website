@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -13,4 +14,15 @@ export default function HomePage() {
       </p>
     </main>
   );
+}
+
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  return {
+    title: "多元世界團隊",
+    description: "多元世界團隊",
+  };
 }
