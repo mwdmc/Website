@@ -1,0 +1,37 @@
+import './global.css';
+import { RootProvider } from 'fumadocs-ui/provider';
+import { I18nProvider } from 'fumadocs-ui/i18n';
+import { Inter } from 'next/font/google';
+import type { ReactNode } from 'react';
+import { NextDocsProvider } from './next-docs-provider';
+import { RollButton } from 'fumadocs-ui/components/roll-button';
+import Footer from '@/app/components/Footer';
+import { footer } from '@/config';
+
+const inter = Inter({
+  subsets: ['latin'],
+});
+
+export default function Layout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en" className={inter.className}>
+      <body className="flex min-h-screen flex-col" suppressHydrationWarning>
+        <I18nProvider
+          locale='cn'
+          translations={{
+            cn: {
+              name: '中文',
+              search: '搜索...',
+            }
+          }}
+        >
+          <RollButton />
+          <NextDocsProvider>
+            {children}
+          </NextDocsProvider>
+          <Footer categories={footer}/>
+        </I18nProvider>
+      </body>
+    </html>
+  );
+}
