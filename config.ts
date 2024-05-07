@@ -70,12 +70,6 @@ export const blogRecommendations = [
   "perks"
 ];
 
-export const algolia = {
-  id: "IQVV3AWJXQ",
-  key: "ea49654ddf9ce80b2889ce0d368083fd",
-  index: "docs"
-}
-
 export const blogAuthors: Record<string, AuthorData> = {
   soldierp: {
     name: "河馬",
