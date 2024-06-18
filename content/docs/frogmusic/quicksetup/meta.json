@@ -3,5 +3,6 @@
       "dj", 
       "setup",
       "..."
-    ]
+    ],
+    "defaultOpen": true
   }

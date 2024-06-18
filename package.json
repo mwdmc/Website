@@ -12,10 +12,14 @@
     "fumadocs-core": "^11.0.5",
     "fumadocs-mdx": "^8.2.14",
     "fumadocs-ui": "^11.0.5",
+    "katex": "^0.16.10",
     "lucide-react": "^0.378.0",
     "next": "^14.2.3",
+    "next-sitemap": "^4.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0",
     "webpack": "^5.91.0"
   },
   "devDependencies": {

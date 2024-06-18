@@ -58,6 +58,11 @@ export const footer: FooterCategory[] = [
         href: "https://status.mwdmc.dev/",
         newWindow: true,
       },
+      {
+        label: "郵件系統",
+        href: "https://mail.mwdmc.dev/",
+        newWindow: true,
+      }
     ],
   },
 ];
