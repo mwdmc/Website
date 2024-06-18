@@ -9,6 +9,7 @@ import { NextDocsProvider } from './next-docs-provider';
 import { RollButton } from 'fumadocs-ui/components/roll-button';
 import Footer from '@/app/components/Footer';
 import { footer } from '@/config';
+import Script from 'next/script';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           }}
         >
           <RollButton />
+          <Script src="https://cdn.jsdelivr.net/npm/scrolls.js@1.0.18/scrolls.min.js"></Script>
           <NextDocsProvider>
             {children}
           </NextDocsProvider>
