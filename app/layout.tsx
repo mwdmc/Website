@@ -1,12 +1,10 @@
 import './global.css';
 import 'katex/dist/katex.css';
 
-import { RootProvider } from 'fumadocs-ui/provider';
 import { I18nProvider } from 'fumadocs-ui/i18n';
 import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { NextDocsProvider } from './next-docs-provider';
-import { RollButton } from 'fumadocs-ui/components/roll-button';
 import Footer from '@/app/components/Footer';
 import { footer } from '@/config';
 import Script from 'next/script';
@@ -28,7 +26,6 @@ export default function Layout({ children }: { children: ReactNode }) {
             }
           }}
         >
-          <RollButton />
           <Script src="https://cdn.jsdelivr.net/npm/scrolls.js@1.0.18/scrolls.min.js"></Script>
           <NextDocsProvider>
             {children}

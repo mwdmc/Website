@@ -41,7 +41,7 @@ export const footer: FooterCategory[] = [
       },
       {
         label: "Discord",
-        href: "/discord",
+        href: "https://dc.mwdmc.dev/",
         newWindow: true,
       },
     ],
@@ -71,26 +71,25 @@ export const footer: FooterCategory[] = [
  * a list of blog file names
  */
 export const blogRecommendations = [
-  "safety",
   "perks"
 ];
 
 export const blogAuthors: Record<string, AuthorData> = {
   soldierp: {
     name: "河馬",
-    title: "擁有者一號",
+    title: "擁有者",
     url: "https://sptw.me",
     image_url: "https://cdn.discordapp.com/avatars/561210753517092884/3b2b4989cfd10f281ce32addf0bf3242.png?size=1024"
   },
   bu: {
     name: "Bu",
-    title: "擁有者二號",
+    title: "擁有者",
     url: "/404",
     image_url: "https://cdn.discordapp.com/avatars/730325036640239626/f299e0ec60cd580a303dc22f9209d3cd.png?size=1024"
   },
   blockeric: {
     name: "八瑞",
-    title: "擁有者三號",
+    title: "擁有者",
     url: "/404",
     image_url: "https://cdn.discordapp.com/avatars/678181301609562123/d4ef51c4af80355b9aad8deb695d81ab.png?size=1024"
   },

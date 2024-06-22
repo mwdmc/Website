@@ -8,10 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "firebase-functions": "^5.0.1",
-    "fumadocs-core": "^11.0.5",
-    "fumadocs-mdx": "^8.2.14",
-    "fumadocs-ui": "^11.0.5",
+    "fumadocs-core": "^12.1.1",
+    "fumadocs-mdx": "^8.2.32",
+    "fumadocs-ui": "^12.1.1",
     "katex": "^0.16.10",
     "lucide-react": "^0.378.0",
     "next": "^14.2.3",

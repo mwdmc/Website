@@ -8,6 +8,7 @@ import { docs, other } from "./utils/source";
 import { Book, StepBack, Undo2Icon } from 'lucide-react';
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { RollButton } from "fumadocs-ui/components/roll-button";
 
 export function NextDocsProvider({ children }: { children: ReactNode }) {
     let path = usePathname();
@@ -24,57 +25,7 @@ export function NextDocsProvider({ children }: { children: ReactNode }) {
             },
         }}>
             <RootProvider>
-                <DocsLayout 
-                    sidebar={{
-                        enabled: (path.startsWith("/docs")) ? true : false,
-                        defaultOpenLevel: 0,
-                        banner: (
-                            <Link
-                                href="/"
-                                className="mb-4 inline-flex flex-row gap-2 px-2 text-sm text-muted-foreground transition-colors hover:text-primary"
-                            >
-                                <Undo2Icon className="h-5 w-5" /> 返回主頁
-                            </Link>
-                        ),
-                    }}
-                    tree={(path.startsWith("/docs")) ? docs.pageTree : other.pageTree}
-                    nav={{
-                        title: (
-                          <>
-                            <Image
-                              alt="logo"
-                              src="https://i.imgur.com/10NgdV5.png"
-                              width={35}
-                              height={35}
-                              className="rounded-full" />
-                            <span className="ml-2 text-lg font-bold">多元世界團隊</span>
-                          </>
-                        )
-                    }}
-                    links={[
-                        {
-                          icon: <Book />,
-                          url: "/docs",
-                          text: "星球文件",
-                        },
-                        {
-                          url: "/blog",
-                          text: "星球日記",
-                        },
-                        {
-                          url: "https://status.mwdmc.dev",
-                          text: "星球導航",
-                          external: true,
-                        },
-                        {
-                          url: "/discord",
-                          text: "星球聚集地",
-                          external: true,
-                        },
-                    ]}
-                >
-                    {children}
-                </DocsLayout>
+                {children}
             </RootProvider>
         </I18nProvider>
     );

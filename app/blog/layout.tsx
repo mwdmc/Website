@@ -1,5 +1,7 @@
+import { Layout } from "fumadocs-ui/layout";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { baseOptions } from "../layout.config";
 
 export const metadata: Metadata = {
   title: {
@@ -20,5 +22,11 @@ export const metadata: Metadata = {
 };
 
 export default function BlogLayout({ children }: { children: ReactNode }) {
-  return <div className="container">{children}</div>;
+  return (
+    <Layout nav={baseOptions.nav} links={baseOptions.links}>
+      <div className="container">
+        {children}
+      </div>
+    </Layout>
+  )
 }
