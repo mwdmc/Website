@@ -8,6 +8,7 @@ import { NextDocsProvider } from './next-docs-provider';
 import Footer from '@/app/components/Footer';
 import { footer } from '@/config';
 import Script from 'next/script';
+import { NextRequest, NextResponse } from 'next/server';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,7 +16,7 @@ const inter = Inter({
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="zh-TW" className={inter.className}>
       <body className="flex min-h-screen flex-col" suppressHydrationWarning>
         <I18nProvider
           locale='cn'

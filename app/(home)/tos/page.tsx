@@ -1,6 +1,7 @@
 import { DocsBody } from "fumadocs-ui/page";
 import { Pre, CodeBlock } from 'fumadocs-ui/components/codeblock';
 import { Metadata } from "next";
+import { LinkButton } from "@/app/components/LinkButton";
 
 export default async function Page({
   params,
@@ -19,8 +20,22 @@ export default async function Page({
           }}
         />
       </div> */}
-      <div className="prose container">
-        <h1>服務條款</h1>
+      <div className="container">
+        <h1 className="text-center text-4xl font-bold">服務條款</h1>
+        <div className="flex flex-row justify-center gap-2.5 max-sm:flex-col max-sm:items-stretch">
+          <LinkButton
+            href="/privacy"
+            variant="primary"
+          >
+            隱私權政策
+          </LinkButton>
+          <LinkButton
+            href="/copyright"
+            variant="secondary"
+          >
+            版權政策
+          </LinkButton>
+        </div>
         <p>多元世界團隊（以下簡稱「乙方」）及其關係團隊茲提供遊戲（包含電腦軟體、行動應用程式或網頁遊戲等）、網站（包含乙方架構網頁或Facebook、Instagram等社群網站）、資訊、服務等（以下概括簡稱為「乙方遊戲服務」）供使用者（以下簡稱「甲方」）接觸或使用。</p>
         <p>甲方於註冊乙方遊戲服務帳號或使用乙方遊戲服務前應詳閱＜多元世界伺服器使用者服務條款＞（以下簡稱「服務條款」）、＜多元世界團隊個人資料暨隱私政策條款＞（以下簡稱「隱私權政策」）及，以保障甲方權益。本服務條款構成甲乙雙方間契約，甲方於閱畢本服務條款內容並於確認頁面按下「同意」選項或註冊乙方遊戲服務帳號或使用乙方遊戲服務，即視為甲方完全了解並同意本服務條款。</p>
         <p>倘若甲方為限制行為能力人者，本契約訂定時，應經甲方之法定代理人同意，本契約始生效力；甲方為無行為能力人者，本契約之訂定，應由甲方之法定代理人代為之。</p>

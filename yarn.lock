@@ -2050,10 +2050,10 @@ fresh@0.5.2:
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
   integrity sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==
 
-fumadocs-core@^12.2.1, fumadocs-core@12.2.1, fumadocs-core@12.x.x:
-  version "12.2.1"
-  resolved "https://registry.npmjs.org/fumadocs-core/-/fumadocs-core-12.2.1.tgz"
-  integrity sha512-5lEPw+26enWDHrLyzpZvmV2zWPQJM+6zm1tpK3q3fktcutKJc0Wr2PLavEn1IwyDsz/VEAv0l/i5xigVRO7gmQ==
+fumadocs-core@^12.3.1, fumadocs-core@12.3.1, fumadocs-core@12.x.x:
+  version "12.3.1"
+  resolved "https://registry.npmjs.org/fumadocs-core/-/fumadocs-core-12.3.1.tgz"
+  integrity sha512-dN3jFA+SWFLoQXqEBvwsAPZmz+sCAhTdhizcwT1tAe7YRzRDQNbMOlJTJNAOpgTp+SJqETverbPzEGog2ijxBA==
   dependencies:
     "@formatjs/intl-localematcher" "^0.5.4"
     "@shikijs/rehype" "^1.6.5"
@@ -2083,10 +2083,10 @@ fumadocs-mdx@^8.2.33:
     gray-matter "^4.0.3"
     zod "^3.23.8"
 
-fumadocs-ui@^12.2.1:
-  version "12.2.1"
-  resolved "https://registry.npmjs.org/fumadocs-ui/-/fumadocs-ui-12.2.1.tgz"
-  integrity sha512-6tCxp46PUYcKWTW+VQ4s4pv+9n4nt6VkLFG1H7tlc2QnsGMpOeoJicrIBjzMd0kSE6uqoKLk5wTtHBrcdADhGQ==
+fumadocs-ui@^12.3.1:
+  version "12.3.1"
+  resolved "https://registry.npmjs.org/fumadocs-ui/-/fumadocs-ui-12.3.1.tgz"
+  integrity sha512-uMUPwokFXDJxB3dv6DmxiWveGesw1i+BsBJsXYexLRGFpjm+ydPzKsSYEdyGUaMgDuJ063iTv9muJX622D39HA==
   dependencies:
     "@radix-ui/react-accordion" "^1.1.2"
     "@radix-ui/react-collapsible" "^1.0.3"
@@ -2098,7 +2098,7 @@ fumadocs-ui@^12.2.1:
     "@tailwindcss/typography" "^0.5.13"
     class-variance-authority "^0.7.0"
     cmdk "^1.0.0"
-    fumadocs-core "12.2.1"
+    fumadocs-core "12.3.1"
     lucide-react "^0.395.0"
     next-themes "^0.3.0"
     react-medium-image-zoom "^5.2.4"

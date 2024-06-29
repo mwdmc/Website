@@ -16,6 +16,15 @@ const withMDX = createMDX({
 const config = {
   remarkPlugins: [remarkImage],
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: '/discord',
+        destination: 'https://discord.gg/fe7fq34rkc',
+        permanent: true,
+      },
+    ]
+  },
   images: {
     remotePatterns: [
       {

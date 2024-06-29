@@ -1,6 +1,8 @@
 import { DocsBody } from "fumadocs-ui/page";
 import { Pre, CodeBlock } from 'fumadocs-ui/components/codeblock';
 import { Metadata } from "next";
+import { LinkButton } from "@/app/components/LinkButton";
+import { EyeIcon } from "lucide-react";
 
 export default async function Page({
   params,
@@ -19,7 +21,22 @@ export default async function Page({
           }}
         />
       </div> */}
-      <h1>版權政策</h1>
+      <div className="container">
+        <h1 className="text-center text-4xl font-bold">版權政策</h1>
+        <div className="flex flex-row justify-center gap-2.5 max-sm:flex-col max-sm:items-stretch">
+          <LinkButton
+            href="/privacy"
+            variant="primary"
+          >
+            隱私權政策
+          </LinkButton>
+          <LinkButton
+            href="/tos"
+            variant="secondary"
+          >
+            服務條款
+          </LinkButton>
+        </div>
         <h2> 一、網站使用 </h2>
         <p>本網站及其包含的所有資料，包括但不限於資訊、描述、照片、文字、數據、影片、圖片、影像、樣品、軟體及其他資料和服務（以下統稱為「資料」），僅供個人在合法範圍內參考和非商業用途使用，並受制於本使用須知。您不得以非法或違反本使用須知及法令的方式使用本網站或其包含的資料，且不得以任何可能損害、癱瘓、超載、損傷本網站伺服器或干擾他人使用本網站的方式使用。</p>
         <p>若您被拒絕進入本網站或其任何資料區，請勿嘗試以駭客手法或未經授權的方式進入，或者進入連接至本網站伺服器的電腦系統或網路。</p>
@@ -50,7 +67,7 @@ export default async function Page({
         <p>因使用本網站所生之任何爭議，應依據中華民國相關法律規定處理。本團隊保留隨時終止或暫停本網站服務之權利。一旦本團隊停止本網站服務，使用者應立即銷毀所有由本網站獲得的資訊、內容或檔案。</p>
         <p>本團隊保留變更及修改本使用須知之權利，使用者應定期查閱。對於本使用須知的任何變更修改，本團隊不會另行通知或提醒。</p>
         <p>以上條款為本網站使用的基本規定，使用者在使用本網站前應仔細閱讀並遵守。若使用者不同意本使用須知的任何部分，請勿使用本網站。使用本網站即表示使用者同意並遵守本使用須知的所有條款和規定。</p>
-
+      </div>
     </DocsBody>
   );
 }

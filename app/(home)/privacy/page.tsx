@@ -1,6 +1,7 @@
 import { DocsBody } from "fumadocs-ui/page";
 import { Pre, CodeBlock } from 'fumadocs-ui/components/codeblock';
 import { Metadata } from "next";
+import { LinkButton } from "@/app/components/LinkButton";
 
 export default async function Page({
   params,
@@ -19,8 +20,22 @@ export default async function Page({
           }}
         />
       </div> */}
-      <div className="prose container">
-        <h1>隱私權政策</h1>
+      <div className="container">
+        <h1 className="text-center text-4xl font-bold">隱私權政策</h1>
+        <div className="flex flex-row justify-center gap-2.5 max-sm:flex-col max-sm:items-stretch">
+          <LinkButton
+            href="/tos"
+            variant="primary"
+          >
+            服務條款
+          </LinkButton>
+          <LinkButton
+            href="/copyright"
+            variant="secondary"
+          >
+            版權政策
+          </LinkButton>
+        </div>
         <p>親愛的使用者與玩家們您好：</p>
         <p>歡迎您使用多元世界及其關係團隊（以下稱「我們」或「多元世界」）所提供的網頁、遊戲、資訊以及相關服務（以下稱「遊戲服務」）。多元世界致力於保護您的個人資料及隱私權，為了讓您能夠安心地使用我們提供的各項遊戲服務，請您詳閱＜隱私政策條款＞（以下稱「本條款」），使用我們的遊戲服務就代表著您已閱畢並同意以下內容。如果您不同意這些條款，請不要使用任何服務，謝謝您的配合。</p>
 
