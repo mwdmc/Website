@@ -23,6 +23,11 @@ const config = {
         destination: 'https://discord.gg/fe7fq34rkc',
         permanent: true,
       },
+      {
+        source: '/invite/frogmusic',
+        destination: 'https://discord.com/oauth2/authorize?client_id=1216003625503948830',
+        permanent: false
+      },
     ]
   },
   images: {

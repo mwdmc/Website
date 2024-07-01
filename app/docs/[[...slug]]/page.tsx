@@ -38,7 +38,7 @@ export function generateMetadata({ params }: { params: { slug?: string[] } }) {
   if (page == null) notFound();
 
   return {
-    title: page.data.title + " | 多元世界",
+    title: page.data.title + " - の星球文件",
     description: page.data.description,
   } satisfies Metadata;
 }

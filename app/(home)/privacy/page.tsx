@@ -89,6 +89,9 @@ export default async function Page({
 
         <h2>九、聯絡方式</h2>
         <p>如果您對於本條款或多元世界的隱私保護政策或行為有任何疑問，請透過 Discord 與我們聯繫。</p>
+
+        <h2>十、Discord 機器人</h2>
+        <p>我們將會使用 Discord 的 Message Content Intent 來存取您的訊息，並且提供點播頻道等服務，使用可以不使用此公能，並保證您的權力。</p>
       </div>
     </DocsBody>
   );

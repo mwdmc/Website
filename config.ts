@@ -85,7 +85,7 @@ export const blogAuthors: Record<string, AuthorData> = {
     name: "Bu",
     title: "擁有者",
     url: "/404",
-    image_url: "https://cdn.discordapp.com/avatars/730325036640239626/f299e0ec60cd580a303dc22f9209d3cd.png?size=1024"
+    image_url: "https://cdn.discordapp.com/avatars/730325036640239626/3455d63692c662a7f60b691ac579938c.png?size=1024"
   },
   blockeric: {
     name: "八瑞",
