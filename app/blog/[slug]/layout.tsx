@@ -6,8 +6,9 @@ import { Fragment } from "react";
 import { getTagHref } from "@/app/utils/tags";
 import { notFound } from "next/navigation";
 import type { AuthorData } from "@/app/types";
-import { blogAuthors } from "@/config";
+import { blogAuthors, urlBase } from "@/config";
 import { BlogPage as Page, blogs } from "@/app/utils/source";
+import { Metadata } from "next";
 
 export default function BlogLayout({
   params,

@@ -1,7 +1,7 @@
 import type { FooterCategory } from "@/app/components/Footer";
 import { AuthorData } from "./app/types";
 
-export const domain = "https://frogcord.xyz";
+export const domain = "https://mwdmc.dev";
 
 export const urlBase = new URL(
   process.env.VERCEL_URL

@@ -6,9 +6,10 @@ import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { NextDocsProvider } from './next-docs-provider';
 import Footer from '@/app/components/Footer';
-import { footer } from '@/config';
+import { footer, urlBase } from '@/config';
 import Script from 'next/script';
 import { NextRequest, NextResponse } from 'next/server';
+import { Metadata } from 'next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -36,4 +37,8 @@ export default function Layout({ children }: { children: ReactNode }) {
       </body>
     </html>
   );
+}
+
+export const metadata: Metadata = {
+  metadataBase: urlBase
 }
