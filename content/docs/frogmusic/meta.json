@@ -1,6 +1,7 @@
 {
     "title": "青蛙音樂",
     "pages": [
+      "status",
       "quicksetup",
       "cmd",
       "..."
